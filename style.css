@@ -4,3 +4,161 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root{
+    --primario: #483d8b;
+    --gris-oscuro: #dddddd;
+    --gris-claro: #fbfbfb;
+    --secundario: #f0eefb;
+}
+
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: var(--primario);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    flex: 1;
+}
+
+footer{
+    background-color: var(--gris-claro);
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid var(--gris-oscuro);
+    margin-top: 40px; 
+}
+
+section{
+    width: 100%;
+    
+}
+
+#titulo-users{
+    cursor: pointer;
+    color: #222;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.barra-horizontal{
+    border: none;
+    border-top: 1px solid var(--gris-oscuro);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.filtros span{
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.texto-activo{
+    font-weight: bold;
+}
+
+.busqueda input{
+    padding: 6px 12px;
+    border: 1px solid var(--gris-oscuro);
+    border-radius: 4px;
+    width: 220px;
+}
+
+.busqueda input:focus{
+    border-color: var(--primario);
+    outline: none;
+}
+
+.botones-container{
+    display: flex;
+    gap: 4px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+.btn{
+    padding: 6px 14px;
+    font-size: 12px;
+    background-color: var(--primario);
+    color: white;
+    border: 1px solid var(--primario);
+    cursor: pointer;
+}
+
+#user-container{
+    width: 100%;
+}
+
+.fila-encabezado, .fila-usuario{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid var(--gris-oscuro);
+    align-items: center;
+    font-size: 14px;
+}
+
+.fila-encabezado{
+    font-weight: bold;
+    color: #555;
+}
+
+.fila-usuario:nth-child(odd){
+    background-color: var(--gris-claro);
+}
+
+.fila-usuario:hover{
+    background-color: var(--secundario);
+}
+
+.columna{
+    flex: 1;
+}
+
+.username-estilo{
+    color: var(--primario);
+}
+
+.columna-checkbox{
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.columna-icono{
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.user-avatar{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
